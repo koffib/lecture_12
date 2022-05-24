@@ -1,2 +1,2 @@
-# lecture_12
+https://koffib.github.io/lecture_12/
  
