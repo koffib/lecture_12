@@ -3,7 +3,17 @@ html{
     font-size: 22px;
 }
 #nav{
-    border: 1px solid black 
+    border: 1px solid black ;
+    display: grid  ;
+    grid-template-columns: repeat(5, 1fr);
+}
+#nav a{
+    background-color: pink;
+    text-align: center;
+    padding: 10px 0;
+}
+#nav:hover{
+    background-color: aqua;
 }
 
 #container{
@@ -45,6 +55,13 @@ html{
         height: 200px;
         
     }
+    #nav{
+    grid-template-columns: repeat(2 , 1fr);
+    }
+    #nav a{
+    border: 1px solid black ;
+    }
+    
     
 }
 
