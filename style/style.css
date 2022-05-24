@@ -1,21 +1,90 @@
 html{
     background-color: brown;
+    font-size: 22px;
 }
+#nav{
+    border: 1px solid black 
+}
+
+#container{
+    border: 1px solid black ;
+    height:400px;
+}
+
+.article{
+    height: 100px;
+    background-color: orange;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.article h3{
+    text-align: center;
+}
+#hero-image{
+    height: 200px;
+    background-color: aliceblue;
+}
+
+
 /*------------480px*/
 @media(max-width: 480px) {
     html{
         background-color: pink;
+        font-size: 8px;
+        
     }
+    /* REM is king for responsive font size */
+    .article{
+        font-size: 2rem;
+    }
+    .article h3{
+        font-size: 3rem; 
+    }
+    #hero-image{
+        height: 200px;
+        
+    }
+    
 }
 
 
-@media (min-width: 480) and (max-width:768px){
+@media (min-width: 769px) {
   
    html {
        background-color: blue;
    }
+   .article{
+       height: 300px;
+   }
+   #container{
+       width: 80%;
+       margin: 10px auto;
+       display: grid;
+       grid-template-columns: repeat(3, auto);
+       gap: 5px;
+   }
+   
 }
 
+@media (min-width: 481px) and (max-width:768px){
+    html{
+        background-color: red;
+    }
+    #container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .article{
+     height: 150px;
+     margin-bottom: 20px;
+ }
+ #hero-image{
+    height: 300px;
+    
+}
+    
+}
 
 
 
